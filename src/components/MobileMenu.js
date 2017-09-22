@@ -15,8 +15,8 @@ const MobileMenu = ({
         backgroundImage: `url(${backgroundImage}`
       }}>
       <div className="logo">
-        <a href="http://jslancer.com" className="simple-text">
-          JSLancer
+        <a href="#" className="simple-text">
+          Sandra Hallie
       </a>
       </div>
       <ul className="nav navbar-nav">
@@ -35,31 +35,25 @@ const MobileMenu = ({
         <li className={location.pathname === '/table' ? 'active' : null}>
           <Link to="/table">
             <i className="pe-7s-note2"></i>
-            <p>Table List</p>
+            <p>Resume</p>
           </Link>
         </li>
         <li className={location.pathname === '/typography' ? 'active' : null}>
           <Link to="typography">
             <i className="pe-7s-news-paper"></i>
-            <p>Typography</p>
+            <p>React Projects</p>
           </Link>
         </li>
         <li className={location.pathname === '/icons' ? 'active' : null}>
           <Link to="/icons">
             <i className="pe-7s-science"></i>
-            <p>Icons</p>
+            <p>Rails Projects</p>
           </Link>
         </li>
         <li className={location.pathname === '/map' ? 'active' : null}>
           <Link to="/map">
             <i className="pe-7s-map-marker"></i>
-            <p>Maps</p>
-          </Link>
-        </li>
-        <li className={location.pathname === '/notifications' ? 'active' : null}>
-          <Link to="notifications">
-            <i className="pe-7s-bell"></i>
-            <p>Notifications</p>
+            <p>iOS Projects</p>
           </Link>
         </li>
       </ul>

@@ -1,25 +1,23 @@
 import React from 'react';
-import profileImage from '../../assets/images/faces/face-3.jpg';
+import profileImage from '../../assets/images/profile-image.jpeg';
 const UserInfo = () => (
   <div className="card card-user">
     <div className="image">
-      <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&amp;fm=jpg&amp;h=300&amp;q=75&amp;w=400" alt="..." />
+      <img src="https://static.pexels.com/photos/249798/pexels-photo-249798.png" alt="..." />
     </div>
     <div className="content">
       <div className="author">
         <a href="#">
-          <img className="avatar border-gray" src={profileImage} alt="Mike Andrew" />
+          <img className="avatar" src={profileImage} alt="Sandra Hallie" />
 
           <h4 className="title">
-            Mike Andrew<br />
-            <small>michael24</small>
+            Sandra Hallie<br />
+            <small>sanlouise</small>
           </h4>
         </a>
       </div>
       <p className="description text-center">
-        "Lamborghini Mercy <br />
-        Your chick she so thirsty <br />
-        I'm in that two seat Lambo"
+        "I am a React developer with a true love for JavaScript."
       </p>
     </div>
     <hr />

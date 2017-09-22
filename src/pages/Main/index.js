@@ -6,7 +6,6 @@ import { setMobileNavVisibility } from '../../reducers/Layout';
 import Header from './Header';
 import Footer from './Footer';
 import SideBar from '../../components/SideBar';
-import ThemeOptions from '../../components/ThemeOptions';
 import MobileMenu from '../../components/MobileMenu';
 /**
  * Pages
@@ -35,7 +34,6 @@ const Main = ({
     })}>
       <div className="wrapper">
         <SideBar />
-        <ThemeOptions />
 
         <div className="main-panel">
           <Header />
