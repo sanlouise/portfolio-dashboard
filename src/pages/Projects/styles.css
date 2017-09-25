@@ -1,0 +1,12 @@
+.projects img {
+  max-height: 250px;
+  width: auto;
+}
+
+.project {
+  margin: 2em;
+}
+
+.hr {
+  color: black;
+}
