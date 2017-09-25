@@ -8,16 +8,18 @@ const Projects = () => (
     <div className="container-fluid">
       <div className="row">
         <div className="col-sm-12">
-          <div className="card">
+          <div className="card projects">
             <div className="header text-center">
-              <h4 className="title">Thank you for checking out my projects.</h4>
+              <h2 className="title">Thank you for checking out my projects.</h2>
             </div>
-            <div className="content projects container">
+            <div className="content container">
               <div className="row">
                 {map(projects, (project) => (
-                  <div className="col-xs-12 project" key={project.id}>
-                    <div className="col-lg-6 col-sm-12">
-                      <h4>{project.name}</h4>
+                  <div className="col-xs-12 project container" key={project.id}>
+                    <hr className="divider"/>
+                    <div className="col-md-6 col-sm-6 col-xs-12 project-info">
+                      <h3 className="title">{project.name}</h3>
+                      <h5>Built with: {project.technologies} | View on <a href={project.github}>GitHub</a></h5>
                       <p>{project.description}</p>
                       <ul>
                         {map(project.points, (point) => (
@@ -25,10 +27,9 @@ const Projects = () => (
                         ))}
                       </ul>
                     </div>
-                    <div className="col-lg-6 col-sm-12">
+                    <div className="col-md-6 col-sm-6 col-xs-12">
                       <img src={project.src} />
                     </div>
-                    <hr />
                   </div>
 
                 ))}
