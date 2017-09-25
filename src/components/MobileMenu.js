@@ -1,23 +1,16 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import backgroundImage from '../assets/images/sidebar-5.jpg';
 
 const MobileMenu = ({
   location,
-  backgroundColor,
-  backgroundImage
 }) => (
   <div>
-    <div className="mobile-nav collapse navbar-collapse has-image"
-      data-color={backgroundColor}
-      style={{
-        backgroundImage: `url(${backgroundImage}`
-      }}>
+    <div className="mobile-nav collapse navbar-collapse has-image">
       <div className="logo">
         <a href="#" className="simple-text">
           Sandra Hallie
-      </a>
+        </a>
       </div>
       <ul className="nav navbar-nav">
         <li className={location.pathname === '/' ? 'active' : null}>
@@ -62,12 +55,5 @@ const MobileMenu = ({
 );
 
 
-const mapStateToProps = state => ({
-  enableBackgroundImage: state.ThemeOptions.enableBackgroundImage,
-  backgroundColor: state.ThemeOptions.backgroundColor,
-  backgroundImage: state.ThemeOptions.backgroundImage
-});
 
-export default withRouter(
-  connect(mapStateToProps)(MobileMenu)
-);
+export default withRouter(connect()(MobileMenu));
