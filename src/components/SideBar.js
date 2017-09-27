@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import ReactSpinningLogo from '../assets/images/svgs/ReactSpinning';
+import './styles.css';
 
 const SideBar = ({
   location,
@@ -8,9 +10,8 @@ const SideBar = ({
   <div className="sidebar">
     <div className="sidebar-wrapper">
       <div className="logo">
-        <a href="" className="simple-text">
-          Sandra Hallie
-        </a>
+        <ReactSpinningLogo className="App-logo text-center" alt="react logo" />
+        <a href="/" className="simple-text">Sandra Hallie</a>
       </div>
       <ul className="nav">
         <li className={location.pathname === '/' ? 'active' : null}>

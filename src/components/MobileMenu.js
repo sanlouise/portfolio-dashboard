@@ -2,6 +2,9 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
+import ReactSpinningLogo from '../assets/images/svgs/ReactSpinning';
+import './styles.css';
+
 const MobileMenu = ({
   location,
 }) => (
@@ -10,6 +13,7 @@ const MobileMenu = ({
       <div className="logo">
         <a href="#" className="simple-text">
           Sandra Hallie
+          <ReactSpinningLogo className="App-logo text-center" alt="react logo" />
         </a>
       </div>
       <ul className="nav navbar-nav">
