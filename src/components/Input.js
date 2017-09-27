@@ -3,12 +3,12 @@ import React, { PropTypes } from 'react';
 
 const Input = (props) => (
   <div className="form-group">
-    <label>{props.label}</label>
     <input
       onChange={props.onChange}
       type={props.textarea ? 'textarea' : 'text'}
       value={props.value}
       className="form-control"
+      placeholder={props.placeholder}
     />
   </div>
 );
