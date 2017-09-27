@@ -2,6 +2,7 @@ import React from 'react';
 import projects from '../../assets/data/projects.js';
 import './styles.css';
 import map from 'lodash/map';
+import github from '../../assets/images/github.png';
 
 const Projects = () => (
   <div className="content">
@@ -19,13 +20,15 @@ const Projects = () => (
                     <hr className="divider"/>
                     <div className="col-md-6 col-sm-6 col-xs-12 project-info">
                       <h3 className="title">{project.name}</h3>
-                      <h5>Built with: {project.technologies} | View on <a href={project.github}>GitHub</a></h5>
+                      <h5>Built with: <span className="technologies">{project.technologies}</span>
+                      </h5>
                       <p>{project.description}</p>
                       <ul>
                         {map(project.points, (point) => (
                           <li key={point}>{point}</li>
                         ))}
                       </ul>
+                      <a href={project.github}>View on Github <img className="github" src={github}/></a>
                     </div>
                     <div className="col-md-6 col-sm-6 col-xs-12">
                       <img src={project.src} />
