@@ -1,8 +1,13 @@
+// React/Redux Dependencies
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 
+// Externals
 import ReactSpinningLogo from '../assets/images/svgs/ReactSpinning';
+import github from '../assets/images/github-icon.png';
+
+// Internals
 import './styles.css';
 
 const MobileMenu = ({
@@ -33,6 +38,12 @@ const MobileMenu = ({
           <a href="https://resume.creddle.io/resume/ijhfjyvpew8">
             <i className="pe-7s-note2"></i>
             <p>Resume</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/sanlouise">
+            <i><img className="github" src={github}/></i>
+            <p>Github</p>
           </a>
         </li>
       </ul>

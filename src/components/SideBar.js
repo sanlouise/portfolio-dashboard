@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import ReactSpinningLogo from '../assets/images/svgs/ReactSpinning';
+import github from '../assets/images/github-icon.png';
 import './styles.css';
 
 const SideBar = ({
@@ -30,6 +31,12 @@ const SideBar = ({
           <a href="https://resume.creddle.io/resume/ijhfjyvpew8">
             <i className="pe-7s-note2"></i>
             <p>Resume</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/sanlouise">
+            <i><img className="github" src={github}/></i>
+            <p>Github</p>
           </a>
         </li>
       </ul>
