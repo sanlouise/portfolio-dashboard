@@ -2,6 +2,18 @@
   padding: 20px 0;
 }
 
+@media(max-width:993px) {
+  .project {
+    text-align: center;
+  }
+
+  .project-image {
+    margin: 30px 0;
+    max-width: 500px;
+    text-align: center;
+  }
+}
+
 .projects img {
   max-height: auto;
   max-width: 380px;
@@ -47,12 +59,6 @@ hr {
 @media(max-width:601px) {
   .projects img {
     max-width: 250px;
-  }
-}
-
-@media(max-width:992px) {
-  .projects img {
-    max-width: 300px;
   }
 }
 
