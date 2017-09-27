@@ -52,6 +52,12 @@ hr {
   }
 }
 
+@media(min-width:993px) {
+  .project-image {
+    margin-top: 4%;
+  }
+}
+
 .technologies {
   color: #008fd9;
 }
