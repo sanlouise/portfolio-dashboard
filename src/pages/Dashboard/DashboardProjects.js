@@ -16,15 +16,15 @@ const DashboardProjects = () => (
     <div className="row">
 
       <div className="col-sm-12 col-md-4 dashboard-project">
-        <img className="dashboard-project-img" src={dressy} />
+        <img className="dashboard-project-img" src={dressy} alt="dressy"/>
       </div>
 
       <div className="col-sm-12 col-md-4 dashboard-project">
-        <img className="dashboard-project-img" src={weather_app} />
+        <img className="dashboard-project-img" src={weather_app} alt="weather app"/>
         <Link to="/projects"><h2>View All Projects</h2></Link>
       </div>
 
-      <div className="col-sm-12 col-md-4 dashboard-project">
+      <div className="col-sm-12 col-md-4 dashboard-project" alt="conscioux">
         <img className="dashboard-project-img" src={conscioux} />
       </div>
 
