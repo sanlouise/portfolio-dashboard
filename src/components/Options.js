@@ -2,16 +2,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Options = ({ addFilter, options }) => {
-  const { showReact, showRails, showIOS } = options;
+const Options = ({ toggleFilter, options }) => {
+  const { showReact, showRails} = options;
 
   return (
     <div className="options">
       <div className="col s8 offset-s2 m4 offset-m4 center category-picker">
-        <p>Pick one category</p>
+        <h4>Filter Projects</h4>
         <input
           checked={showReact}
-          onClick={addFilter}
+          onChange={() => toggleFilter('showReact')}
           type="checkbox"
           value="react"
           id="react-checkbox"
@@ -20,21 +20,13 @@ const Options = ({ addFilter, options }) => {
 
         <input
           checked={showRails}
-          onClick={addFilter}
+          onChange={() => toggleFilter('showRails')}
           type="checkbox"
           value="rails"
           id="rails-checkbox"
         />
         <label htmlFor="rails-checkbox">Rails</label>
 
-        <input
-          checked={showIOS}
-          onClick={addFilter}
-          type="checkbox"
-          value="ios"
-          id="rios-checkbox"
-        />
-        <label htmlFor="ios-checkbox">iOS</label>
       </div>
 
     </div>
@@ -42,14 +34,10 @@ const Options = ({ addFilter, options }) => {
 };
 
 Options.propTypes = {
-  addFilter: PropTypes.func.isRequired,
+  toggleFilter: PropTypes.func.isRequired,
   options: PropTypes.shape({
-    showBottoms: PropTypes.bool.isRequired,
-    showDresses: PropTypes.bool.isRequired,
-    showLarge: PropTypes.bool.isRequired,
-    showMedium: PropTypes.bool.isRequired,
-    showSmall: PropTypes.bool.isRequired,
-    showTops: PropTypes.bool.isRequired,
+    showReact: PropTypes.bool.isRequired,
+    showRails: PropTypes.bool.isRequired,
   }).isRequired,
 };
 

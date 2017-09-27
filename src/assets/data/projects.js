@@ -3,12 +3,14 @@ import conscioux from '../images/projects/conscioux_s.png';
 import weather_app from '../images/projects/weather_api_s.png';
 import project_management from '../images/projects/project_s.png';
 import stocktracker from '../images/projects/stocktracker_s.png';
+import react_image from '../images/projects/react_image.png';
 
 const projects = [
   {
     id: 1,
     name: "React Ecommerce App",
     technologies: ["React", " & Redux"],
+    type: "React",
     description: "This is a test",
     points: [
       "Developed from scratch with scaffolding.",
@@ -26,6 +28,7 @@ const projects = [
     id: 2,
     name: "React Component Library",
     technologies: ["React"],
+    type: "React",
     description: "Published to NPM as sl-react-components-library",
     points: [
       "Developed from scratch with scaffolding.",
@@ -35,7 +38,7 @@ const projects = [
       "Implemented auto complete search function using AJAX.",
       "Deployed application using Heroku with PostgreSQL."
     ],
-    src: "https://github.com/sanlouise/ecommerce-react/raw/master/src/assets/images/readme.png",
+    src: react_image,
     github: "https://github.com/sanlouise/react-components-library",
     url: "",
   },
@@ -43,6 +46,7 @@ const projects = [
     id: 3,
     name: "React Weather App",
     technologies: ["React", " & Redux", " & Highcharts"],
+    type: "React",
     description: "Users can retrieve the temperature, pressure and humidity of their favorite cities.",
     points: [
       "Built with React and Redux best practices in mind.",
@@ -59,6 +63,7 @@ const projects = [
     id: 4,
     name: "Conscioux",
     technologies: ["Ruby on Rails"],
+    type: "Ruby on Rails",
     description: "Users can easily search for high-quality, eco-friendly cosmetics.",
     points: [
       "Designed UI with custom css and JavaScript/JQuery.",
@@ -74,6 +79,7 @@ const projects = [
     id: 5,
     name: "Stock Tracker",
     technologies: ["Ruby on Rails"],
+    type: "Ruby on Rails",
     description: "Users can easily search and track stocks. They can also follow what their friends are tracking.",
     points: [
       "Developed from scratch with scaffolding.",
@@ -88,9 +94,10 @@ const projects = [
     url: "http://socialstocktracker.herokuapp.com/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Data Flow",
     technologies: ["Ruby on Rails"],
+    type: "Ruby on Rails",
     description: "Paying users can create projects for their organizations to manage deadlines and to store relevant documents. Users can add (non-paying) users to their projects.",
     points: [
       "Used Devise for user authentication.",
