@@ -6,7 +6,7 @@ const Footer = () => (
       <p className="copyright text-center">
         © 2017 Sandra Hallie
         <a href="https://www.codewars.com/users/sanlouise">
-          <img src="https://www.codewars.com/users/sanlouise/badges/small" />
+          <img src="https://www.codewars.com/users/sanlouise/badges/small" alt="codewars"/>
         </a>
       </p>
     </div>
