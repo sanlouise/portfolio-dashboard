@@ -1,6 +1,4 @@
 import React from 'react';
-import EmailChart from './EmailChart';
-import SalesChart from './SalesChart';
 import InfoCard from './InfoCard';
 import IntroText from './IntroText';
 import DashboardProjects from './DashboardProjects';
