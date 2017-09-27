@@ -13,6 +13,7 @@ import MobileMenu from '../../components/MobileMenu';
 import Dashboard from '../Dashboard';
 import ContactForm from '../ContactForm';
 import Projects from '../Projects';
+import IosProjects from '../IosProjects';
 import { withRouter } from 'react-router-dom';
 const Main = ({
   mobileNavVisibility,
@@ -35,6 +36,7 @@ const Main = ({
           <Header />
           <Route exact path="/" component={Dashboard} />
           <Route path="/projects" component={Projects} />
+          <Route path="/ios-projects" component={IosProjects} />
           <Route path="/contact" component={ContactForm} />
           <Footer />
         </div>
