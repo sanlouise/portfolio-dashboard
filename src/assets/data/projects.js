@@ -1,6 +1,8 @@
 import dressy from '../images/projects/dressy.png';
 import conscioux from '../images/projects/conscioux_s.png';
 import weather_app from '../images/projects/weather_api_s.png';
+import project_management from '../images/projects/project_s.png';
+import stocktracker from '../images/projects/stocktracker_s.png';
 
 const projects = [
   {
@@ -81,8 +83,25 @@ const projects = [
       "Implemented auto complete search function using AJAX.",
       "Deployed application using Heroku with PostgreSQL."
     ],
-    src: "http://www.sandrahallie.com/assets/Stocktracker_s-515adf869ce1d5580da6ae381a9bdc89adadbee0715fb366aba1f10a9e3e5bd9.jpg",
+    src: stocktracker,
     github: "https://github.com/sanlouise/stocktracker",
+    url: "http://socialstocktracker.herokuapp.com/",
+  },
+  {
+    id: 5,
+    name: "Data Flow",
+    technologies: ["Ruby on Rails"],
+    description: "Paying users can create projects for their organizations to manage deadlines and to store relevant documents. Users can add (non-paying) users to their projects.",
+    points: [
+      "Used Devise for user authentication.",
+      "Used Milia gem for multi-tenancy.",
+      "Integrated application with SendGrid for email handling.",
+      "Implemented Stripe for payment handling.",
+      "Connected application to Amazon Web Services (AWS S3).",
+      "Designed UI of the pages using custom CSS, Twitter Bootstrap, and JavaScript/JQuery.",
+    ],
+    src: {project_management},
+    github: "https://github.com/sanlouise/projectmanagement",
     url: "http://socialstocktracker.herokuapp.com/",
   },
 
