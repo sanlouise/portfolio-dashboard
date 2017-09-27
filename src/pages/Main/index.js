@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import cx from 'classnames';
 import { setMobileNavVisibility } from '../../reducers/Layout';
@@ -34,10 +34,12 @@ const Main = ({
 
         <div className="main-panel">
           <Header />
-          <Route exact path="/" component={Dashboard} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/ios-projects" component={IosProjects} />
-          <Route path="/contact" component={ContactForm} />
+            <Switch>
+              <Route exact path="/" component={Dashboard} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/ios-projects" component={IosProjects} />
+              <Route path="/contact" component={ContactForm} />
+            </Switch>
           <Footer />
         </div>
       </div>
