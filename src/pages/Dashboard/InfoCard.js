@@ -1,6 +1,6 @@
 import React from 'react';
 import profileImage from '../../assets/images/profile-image.jpeg';
-const UserInfo = () => (
+const InfoCard = () => (
   <div className="card card-user">
     <div className="image">
       <img src="https://static.pexels.com/photos/249798/pexels-photo-249798.png" alt="..." />
@@ -17,16 +17,10 @@ const UserInfo = () => (
         </a>
       </div>
       <p className="description text-center">
-        "I am a React developer with a true love for JavaScript."
+        I am a React developer with a true love for Javascript, currently interested in 100% remote positions.
       </p>
-    </div>
-    <hr />
-    <div className="text-center">
-      <button href="#" className="btn btn-simple"><i className="fa fa-facebook-square"></i></button>
-      <button href="#" className="btn btn-simple"><i className="fa fa-twitter"></i></button>
-      <button href="#" className="btn btn-simple"><i className="fa fa-google-plus-square"></i></button>
     </div>
   </div>
 );
 
-export default UserInfo;
+export default InfoCard;
