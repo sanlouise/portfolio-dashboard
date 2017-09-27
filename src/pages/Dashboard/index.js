@@ -1,22 +1,23 @@
 import React from 'react';
 import EmailChart from './EmailChart';
 import SalesChart from './SalesChart';
-import UserBehaviorChart from './UserBehaviorChart';
+import InfoCard from './InfoCard';
 import IntroText from './IntroText';
-import Tasks from './Tasks';
+import DashboardProjects from './DashboardProjects';
 
 const Dashboard = () => (
-  <div className="content">
+  <div className="content home">
     <div className="container-fluid">
       <div className="row">
-        <div className="col-sm-12 text-center">
-          <IntroText />
-        </div>
         <div className="col-md-4">
-          <EmailChart />
+          <InfoCard />
         </div>
         <div className="col-md-8">
-          <SalesChart />
+          <IntroText />
+        </div>
+
+        <div className="col-sm-12">
+          <DashboardProjects />
         </div>
       </div>
     </div>
