@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { toggleMobileNavVisibility } from '../../reducers/Layout';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 
 const Header = ({
   showMobileMenu,
@@ -15,7 +15,6 @@ const Header = ({
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>
       </button>
-      <a href="#" className="navbar-brand text-center">Dashboard</a>
     </Navbar.Header>
   </Navbar>
 );

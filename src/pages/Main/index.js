@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Router } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import cx from 'classnames';
 import { setMobileNavVisibility } from '../../reducers/Layout';
@@ -11,12 +11,8 @@ import MobileMenu from '../../components/MobileMenu';
  * Pages
  */
 import Dashboard from '../Dashboard';
-import UserProfile from '../UserProfile';
-import TableList from '../TableList';
-import Typography from '../Typography';
-import Icons from '../Icons';
-import MapsPage from '../MapsPage';
-import Notifications from '../Notifications';
+import ContactForm from '../ContactForm';
+import Projects from '../Projects';
 import { withRouter } from 'react-router-dom';
 const Main = ({
   mobileNavVisibility,
@@ -38,12 +34,8 @@ const Main = ({
         <div className="main-panel">
           <Header />
           <Route exact path="/" component={Dashboard} />
-          <Route path="/profile" component={UserProfile} />
-          <Route path="/table" component={TableList} />
-          <Route path="/typography" component={Typography} />
-          <Route path="/icons" component={Icons} />
-          <Route path="/map" component={MapsPage} />
-          <Route path="/notifications" component={Notifications} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={ContactForm} />
           <Footer />
         </div>
       </div>
