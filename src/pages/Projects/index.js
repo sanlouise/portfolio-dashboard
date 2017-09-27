@@ -19,7 +19,7 @@ const Projects = () => (
                 {map(projects, (project) => (
                   <div className="project container" key={project.id}>
                     <hr className="divider"/>
-                    <div className="col-md-5 col-xs-12 project-info">
+                    <div className="col-md-5 col-sm-12 project-info">
                       <h3 className="title">{project.name}</h3>
                       <h5>Built with: <span className="technologies">{project.technologies}</span>
                       </h5>
@@ -31,7 +31,7 @@ const Projects = () => (
                       </ul>
                       <a href={project.github}>View on Github <img className="github" src={github}/></a>
                     </div>
-                    <div className="col-md-4 col-xs-12 project-image">
+                    <div className="col-md-4 col-sm-12 project-image">
                       <img src={project.src} />
                     </div>
                   </div>

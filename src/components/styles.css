@@ -1,12 +1,13 @@
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
+  display: inline;
   height: 40px;
   max-width: 20%;
-  display: inline;
+  vertical-align: bottom;
 }
 
-.simple-text {
-  max-width: 80%;
+.sidebar .sidebar-wrapper .logo .full-name {
+  display: inline-block;
 }
 
 @keyframes App-logo-spin {
