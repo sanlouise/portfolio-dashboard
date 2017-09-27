@@ -1,9 +1,15 @@
-import React from 'react';
-import Iframe from 'react-iframe'
-import projects from '../../assets/data/iosprojects.js';
-import './styles.css';
+// Dependencies
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Iframe from 'react-iframe';
 import map from 'lodash/map';
+
+// Externals
+import projects from '../../assets/data/iosprojects.js';
 import github from '../../assets/images/github.png';
+
+// Internals
+import './styles.css';
 
 const IosProjects = () => (
   <div className="content">
@@ -13,6 +19,11 @@ const IosProjects = () => (
           <div className="card projects">
             <div className="header text-center">
               <h2 className="title">Thank you for checking out my projects.</h2>
+              <Link to="/projects">
+                <button className="btn btn-default">
+                  Back to all Projects
+                </button>
+              </Link>
             </div>
             <div className="content container">
               <div className="row">
@@ -35,6 +46,13 @@ const IosProjects = () => (
                   </div>
                 ))}
               </div>
+            </div>
+            <div className="text-center">
+              <Link to="/projects">
+                <button className="btn btn-default">
+                  Back to all Projects
+                </button>
+              </Link>
             </div>
           </div>
         </div>
