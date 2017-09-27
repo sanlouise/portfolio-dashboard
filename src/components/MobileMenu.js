@@ -15,38 +15,26 @@ const MobileMenu = ({
       <ul className="nav navbar-nav">
         <li className={location.pathname === '/' ? 'active' : null}>
           <Link to="/">
-            <i className="pe-7s-graph"></i>
-            <p>Dashboard</p>
-          </Link>
-        </li>
-        <li className={location.pathname === '/profile' ? 'active' : null}>
-          <Link to="/profile">
             <i className="pe-7s-user"></i>
-            <p>User Profile</p>
+            <p>About Me</p>
           </Link>
         </li>
-        <li className={location.pathname === '/table' ? 'active' : null}>
-          <Link to="/table">
+        <li>
+          <a href="https://resume.creddle.io/resume/ijhfjyvpew8">
             <i className="pe-7s-note2"></i>
             <p>Resume</p>
-          </Link>
+          </a>
         </li>
-        <li className={location.pathname === '/typography' ? 'active' : null}>
-          <Link to="typography">
-            <i className="pe-7s-news-paper"></i>
-            <p>React Projects</p>
-          </Link>
-        </li>
-        <li className={location.pathname === '/icons' ? 'active' : null}>
-          <Link to="/icons">
+        <li className={location.pathname === '/projects' ? 'active' : null}>
+          <Link to="/projects">
             <i className="pe-7s-science"></i>
-            <p>Rails Projects</p>
+            <p>Projects</p>
           </Link>
         </li>
-        <li className={location.pathname === '/map' ? 'active' : null}>
-          <Link to="/map">
-            <i className="pe-7s-map-marker"></i>
-            <p>iOS Projects</p>
+        <li className={location.pathname === '/contact' ? 'active' : null}>
+          <Link to="/contact">
+            <i className="pe-7s-mail"></i>
+            <p>Contact</p>
           </Link>
         </li>
       </ul>

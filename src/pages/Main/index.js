@@ -1,20 +1,22 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import cx from 'classnames';
-import { setMobileNavVisibility } from '../../reducers/Layout';
+
+// Internals
 import Header from './Header';
 import Footer from './Footer';
+
+// Externals
 import SideBar from '../../components/SideBar';
 import MobileMenu from '../../components/MobileMenu';
-/**
- * Pages
- */
 import Dashboard from '../Dashboard';
 import ContactForm from '../ContactForm';
 import Projects from '../Projects';
 import IosProjects from '../IosProjects';
-import { withRouter } from 'react-router-dom';
+import { setMobileNavVisibility } from '../../reducers/Layout';
+
 const Main = ({
   mobileNavVisibility,
   hideMobileMenu,
@@ -48,7 +50,7 @@ const Main = ({
   )
 };
 
-const mapStateToProp = state => ({
+const mapStateToProps = state => ({
   mobileNavVisibility: state.Layout.mobileNavVisibility
 });
 
@@ -56,4 +58,4 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
   hideMobileMenu: () => dispatch(setMobileNavVisibility(false))
 });
 
-export default withRouter(connect(mapStateToProp, mapDispatchToProps)(Main));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
