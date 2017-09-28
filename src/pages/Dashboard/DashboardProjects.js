@@ -25,7 +25,7 @@ const DashboardProjects = () => (
       </div>
 
       <div className="col-sm-12 col-md-4 dashboard-project" alt="conscioux">
-        <img className="dashboard-project-img" src={conscioux} />
+        <img className="dashboard-project-img" src={conscioux} alt="conscioux"/>
       </div>
 
       <Link to="/projects">

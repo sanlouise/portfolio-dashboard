@@ -7,14 +7,11 @@ const InfoCard = () => (
     </div>
     <div className="content">
       <div className="author">
-        <a href="#">
-          <img className="avatar" src={profileImage} alt="Sandra Hallie" />
-
-          <h4 className="title">
-            Sandra Hallie<br />
-            <small>sanlouise</small>
-          </h4>
-        </a>
+        <img className="avatar" src={profileImage} alt="Sandra Hallie" />
+        <h4 className="title">
+          Sandra Hallie<br />
+          <small>sanlouise</small>
+        </h4>
       </div>
       <p className="description text-center">
         I am a React developer with a true love for Javascript, currently interested in 100% remote positions.

@@ -16,7 +16,7 @@ const MobileMenu = ({
   <div>
     <div className="mobile-nav collapse navbar-collapse has-image">
       <div className="logo">
-        <a href="#" className="simple-text">
+        <a href="/" className="simple-text">
           Sandra Hallie
           <ReactSpinningLogo className="App-logo text-center" alt="react logo" />
         </a>
@@ -42,7 +42,7 @@ const MobileMenu = ({
         </li>
         <li>
           <a href="https://github.com/sanlouise">
-            <i><img className="github" src={github}/></i>
+            <i><img className="github" src={github} alt="github logo"/></i>
             <p>Github</p>
           </a>
         </li>

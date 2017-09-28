@@ -1,5 +1,5 @@
 // Dependencies
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Iframe from 'react-iframe';
 import map from 'lodash/map';
@@ -38,7 +38,7 @@ const IosProjects = () => (
                           <li key={point}>{point}</li>
                         ))}
                       </ul>
-                      <a href={project.github}>View on Github <img className="github" src={github}/></a>
+                      <a href={project.github}>View on Github <img className="github" src={github} alt="github logo"/></a>
                     </div>
                     <div className="col-md-6 col-sm-6 col-xs-12">
                       <Iframe url={project.src} width="183px" height="391px" />

@@ -35,7 +35,7 @@ const SideBar = ({
         </li>
         <li>
           <a href="https://github.com/sanlouise">
-            <i><img className="github" src={github}/></i>
+            <i><img className="github" src={github} alt="github logo"/></i>
             <p>Github</p>
           </a>
         </li>

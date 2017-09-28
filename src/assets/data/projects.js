@@ -15,10 +15,6 @@ const projects = [
     points: [
       "Developed from scratch with scaffolding.",
       "Designed UI with custom CSS, Sass, Twitter Bootstrap and JavaScript/JQuery.",
-      "Used Yahoo API for tracking stock markets.",
-      "Applied Devise gem for user authentication.",
-      "Implemented auto complete search function using AJAX.",
-      "Deployed application using Heroku."
     ],
     src: dressy,
     github: "https://github.com/sanlouise/ecommerce-react/",

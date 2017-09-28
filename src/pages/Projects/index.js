@@ -78,13 +78,13 @@ class Projects extends Component {
                               <li key={point}>{point}</li>
                             ))}
                           </ul>
-                          <a href={project.github}>View on Github <img className="github" src={github}/></a>
+                          <a href={project.github}>View on Github <img className="github" src={github} alt="github logo"/></a>
                         </div>
                         <div className="col-md-4 col-sm-12 project-image">
                           {project.url ? (
-                            <a href={project.url}><img src={project.src} /></a>
+                            <a href={project.url}><img src={project.src} alt="project"/></a>
                           ) : (
-                            <img src={project.src} />
+                            <img src={project.src} alt="project"/>
                           )}
                         </div>
                       </div>
