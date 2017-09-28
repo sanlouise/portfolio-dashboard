@@ -28,9 +28,9 @@ const IosProjects = () => (
             <div className="content container">
               <div className="row">
                 {map(projects, (project) => (
-                  <div className="project container" key={project.id}>
+                  <div className="ios-project container" key={project.id}>
                     <hr className="divider"/>
-                    <div className="col-sm-4 col-xs-12 ios-project-info">
+                    <div className="col-xs-12 col-md-7 ios-project-info">
                       <h3 className="title">{project.name}</h3>
                       <p>{project.description}</p>
                       <ul>
@@ -40,7 +40,7 @@ const IosProjects = () => (
                       </ul>
                       <a href={project.github}>View on Github <img className="github" src={github} alt="github logo"/></a>
                     </div>
-                    <div className="col-md-6 col-sm-6 col-xs-12">
+                    <div className="col-xs-12 col-md-5 phone text-center">
                       <Iframe url={project.src} width="183px" height="391px" />
                     </div>
                   </div>
