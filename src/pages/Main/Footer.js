@@ -8,8 +8,8 @@ const Footer = () => (
         © 2017 Sandra Hallie
         <a href="https://www.codewars.com/users/sanlouise">
           <img src="https://www.codewars.com/users/sanlouise/badges/small" alt="codewars"/>
-          <a href="https://github.com/sanlouise"><img className="github" src={github}/></a>
         </a>
+        <a href="https://github.com/sanlouise"><img className="github" src={github} alt="github"/></a>
       </p>
     </div>
   </footer>

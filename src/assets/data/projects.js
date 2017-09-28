@@ -11,14 +11,14 @@ const projects = [
     name: "React Ecommerce App",
     technologies: ["React", " & Redux"],
     type: "React",
-    description: "This is a test",
+    description: "Users can filter through products and add their favorites to their cart.",
     points: [
       "Developed from scratch with scaffolding.",
       "Designed UI with custom CSS, Sass, Twitter Bootstrap and JavaScript/JQuery.",
       "Used Yahoo API for tracking stock markets.",
       "Applied Devise gem for user authentication.",
       "Implemented auto complete search function using AJAX.",
-      "Deployed application using Heroku with PostgreSQL."
+      "Deployed application using Heroku."
     ],
     src: dressy,
     github: "https://github.com/sanlouise/ecommerce-react/",
@@ -107,7 +107,7 @@ const projects = [
       "Connected application to Amazon Web Services (AWS S3).",
       "Designed UI of the pages using custom CSS, Twitter Bootstrap, and JavaScript/JQuery.",
     ],
-    src: {project_management},
+    src: project_management,
     github: "https://github.com/sanlouise/projectmanagement",
     url: "http://socialstocktracker.herokuapp.com/",
   },

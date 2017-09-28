@@ -81,7 +81,11 @@ class Projects extends Component {
                           <a href={project.github}>View on Github <img className="github" src={github}/></a>
                         </div>
                         <div className="col-md-4 col-sm-12 project-image">
-                          <img src={project.src} />
+                          {project.url ? (
+                            <a href={project.url}><img src={project.src} /></a>
+                          ) : (
+                            <img src={project.src} />
+                          )}
                         </div>
                       </div>
 
